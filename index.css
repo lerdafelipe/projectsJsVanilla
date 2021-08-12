@@ -68,3 +68,8 @@ h2 {
   border-left: 1px solid #2eb0ec;
   background-color: blanchedalmond;
 }
+@media screen and (max-width: 600px) {
+  .projects-section {
+    padding: 0;
+  }
+}

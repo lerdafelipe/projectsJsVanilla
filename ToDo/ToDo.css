@@ -88,3 +88,75 @@ input:checked {
   border: none;
   background-color: transparent;
 }
+.popup {
+  display: none;
+  visibility: hidden;
+}
+.popup.active {
+  display: block;
+  visibility: visible;
+}
+.Form-section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 23, 23, 0.582);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.form-div {
+  background-color: rgb(184, 182, 182);
+  width: 250px;
+  height: 120px;
+  padding: 20px;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+form button {
+  background-color: #023059;
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  padding: 5px 0;
+  margin: 30px 15px 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form input {
+  padding: 5px 5px;
+  margin: 10px 15px 0 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+form label {
+  margin: 0 15px;
+}
+.close-popup {
+  position: fixed;
+  z-index: 101;
+  top: 30px;
+  right: 30px;
+  background-color: black;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 3px 7.5px;
+  box-shadow: 5px 5px 9px -6px rgba(253, 253, 253, 0.56);
+  -webkit-box-shadow: 5px 5px 9px -6px rgba(253, 253, 253, 0.56);
+  -moz-box-shadow: 5px 5px 9px -6px rgba(253, 253, 253, 0.56);
+}
