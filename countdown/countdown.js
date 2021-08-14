@@ -16,6 +16,7 @@ function writeTime(){
     document.getElementById('seconds').innerHTML = seconds;
 }
 
+console.log(new Date())
 writeTime();
 
 setInterval(writeTime,1000);
