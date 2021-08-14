@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.countdown-section {
+  background-image: url(./birthday.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.timer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 600px;
+}
+.timer-container_numbers {
+  width: 150px;
+}
+.timer-container_numbers h2 {
+  font-size: 50px;
+  margin: 10px 0 0 0;
+}
+.timer-container_numbers p {
+  font-size: 18px;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .timer-container {
+    width: 300px;
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer a,
+.footer span {
+  font-size: 16px;
+  color: aqua;
+  font-weight: 400;
+}
