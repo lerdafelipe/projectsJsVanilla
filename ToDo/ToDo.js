@@ -32,25 +32,27 @@ function randomId(){
 
 //Function add new task
 const AddTask = ()=>{
-    //new Task with the task and the ID
-    let taskObj = {'task': newTask.value, 'id': randomId()};
-    //Push the new task to the list of tasks
-    arrTasks.push(taskObj);
-    //Send task to localstorage
-    localStorage.setItem('Tasks', JSON.stringify(arrTasks));
-    //Hide the form
-    hideForm();
-    //render of the tasks
-    renderTask(arrTasks);
-    //Cleaning the input of tasks
-    newTask.value = '';
+    if((newTask.value.length) > 5){
+        //new Task with the task and the ID
+        let taskObj = {'task': newTask.value, 'id': randomId()};
+        //Push the new task to the list of tasks
+        arrTasks.push(taskObj);
+        //Send task to localstorage
+        localStorage.setItem('Tasks', JSON.stringify(arrTasks));
+        //Hide the form
+        hideForm();
+        //render of the tasks
+        renderTask();
+        //Cleaning the input of tasks
+        newTask.value = '';
+    }
 }
 
-const renderTask = (array)=>{
+const renderTask = ()=>{
     //Declaring a fragment to insert the task
     let fragment = ''
     //Pushing Html of tasks
-    array.forEach(task =>{
+    arrTasks.forEach(task =>{
         fragment += `<div class="ToDo-tasks">
                             <button type="button" onclick="taskDone(${task.id})" class="task-button"><input class="Check" type="checkbox"/></button>
                             <p class="task-text">${task.task}</p>
@@ -85,3 +87,10 @@ const recuperarTasks = ()=>{
     }
 }
 recuperarTasks();
+
+
+newTask.addEventListener('keyup', (keyup)=>{
+    if((keyup.key).toString() === 'Enter'){
+        AddTask();
+    }
+})
