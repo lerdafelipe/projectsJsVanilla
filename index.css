@@ -68,6 +68,18 @@ h2 {
   border-left: 1px solid #2eb0ec;
   background-color: blanchedalmond;
 }
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: -10px;
+  font-size: 14px;
+}
+.footer span,
+.footer a {
+  color: #1697d3;
+  font-size: 16px;
+  font-weight: 500;
+}
 @media screen and (max-width: 600px) {
   .projects-section {
     padding: 0;

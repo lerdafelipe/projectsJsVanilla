@@ -16,13 +16,28 @@ const newTask = document.getElementById('newTask')
 //Start of list of tasks.
 let arrTasks = [];
 
+//Get ID Random
+function randomId(){
+    let idRand = Math.floor(Math.random() * (1000-1) + 1)
+    let arrayRepete = arrTasks.filter(task => task.id === idRand);
+    if(arrayRepete.length === 0){
+        return idRand;
+    }else{
+        let idRand2 = Math.floor(Math.random() * (1000-1) + 1)
+        let arrayRepete2 = arrTasks.filter(task => task.id === idRand2);
+        if(arrayRepete2.length === 0){return idRand2;}
+    }
+}
+
 
 //Function add new task
 const AddTask = ()=>{
     //new Task with the task and the ID
-    let taskObj = {'task': newTask.value, 'id': (arrTasks.length + 1)};
+    let taskObj = {'task': newTask.value, 'id': randomId()};
     //Push the new task to the list of tasks
     arrTasks.push(taskObj);
+    //Send task to localstorage
+    localStorage.setItem('Tasks', JSON.stringify(arrTasks));
     //Hide the form
     hideForm();
     //render of the tasks
@@ -58,5 +73,15 @@ const hideForm = ()=>{
 //Remove Task
 const taskDone = (ID)=>{
     arrTasks = arrTasks.filter(task => task.id !== ID);
+    localStorage.setItem('Tasks', JSON.stringify(arrTasks));
     renderTask(arrTasks);
 }
+
+//Get tasks from localStorage
+const recuperarTasks = ()=>{
+    if((JSON.parse(localStorage.getItem('Tasks'))) !== null){
+        arrTasks = JSON.parse(localStorage.getItem('Tasks'));
+        renderTask(arrTasks);
+    }
+}
+recuperarTasks();

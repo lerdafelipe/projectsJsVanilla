@@ -109,3 +109,17 @@ body {
   -webkit-box-shadow: 2px 4px 10px -3px rgba(0, 0, 0, 0.66) inset;
   -moz-box-shadow: 2px 4px 10px -3px rgba(0, 0, 0, 0.66) inset;
 }
+.footer {
+  width: 100vw;
+  background-color: #025957;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
+  color: aliceblue;
+}
+.footer span,
+.footer a {
+  color: aqua;
+  font-size: 18px;
+  font-weight: 400;
+}
