@@ -30,7 +30,7 @@ const fecha = new Date();
 
 //Funcion to get Location
 function getPosition (position) {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=fea31ced3c9745528e092413213108&q=${position.coords.latitude},${position.coords.longitude}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=fea31ced3c9745528e092413213108&q=${position.coords.latitude},${position.coords.longitude}`)
     .then(res=>res.json())
     .then(data=>deploy(data.location, data.current));
 }
