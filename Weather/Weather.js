@@ -2,7 +2,7 @@
 if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(getPosition);
 }else{
-    alert('If you don`t give permiss to see your location, we cann`t show the weather');
+    alert('If you don`t give us permissions to use your location, we can`t show you the weather');
 }
 //DOM Ubication
 const ubication = document.getElementById('location');
@@ -43,7 +43,7 @@ const deploy = (location, current)=>{
     //Show date
     day.innerHTML = `${fecha.getUTCDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}`;
     //Show ubication
-    ubication.innerHTML = `${location.region}, ${location.country}`;
+    ubication.innerHTML = `${location.name},${location.region}, ${location.country}`;
     //Show condition
     condition.innerHTML = current.condition.text;
     //Show humidity
