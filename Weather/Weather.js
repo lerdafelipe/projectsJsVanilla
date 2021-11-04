@@ -43,7 +43,7 @@ const deploy = (location, current)=>{
     //Show date
     day.innerHTML = `${fecha.getUTCDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}`;
     //Show ubication
-    ubication.innerHTML = `${location.name},${location.region}, ${location.country}`;
+    ubication.innerHTML = `Date:${location.name},${location.region}, ${location.country}`;
     //Show condition
     condition.innerHTML = current.condition.text;
     //Show humidity

@@ -23,8 +23,8 @@ body {
   flex-direction: column;
 }
 .location_icon {
-  width: 20px;
-  height: 20px;
+  height: 30px;
+  margin-right: 10px;
 }
 .location_div {
   display: flex;
