@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Currency Prices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border: 0px;
+          width: 100%;
+          min-width: 784px;
+          border-spacing: 0px;
+        }
+        
+        td, th {
+          text-align: left;
+          padding: 8px;
+          margin: 0;
+          border: 0px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #525252;
+        }
+        body{
+            background-color: #353535;
+            color: #ffffff;
+        }
+        input{
+            outline: none;
+            border: 1px solid #525252;
+            color: #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" href="./crypto.css">
+</head>
+<body>
+    <div class="container" style="overflow-x: hidden;">
+        <h2 style="text-align: center;">Crypto Currency Prices</h2>
+        <h5 style="color: #d3c2c2;">Find your favorite Crypto</h5>
+        <input type="text" placeholder="Search a Coin" style="background-color: #525252; width: 100%; padding: 5px 5px 5px 10px; border-radius: 15px;">
+        <div class="scroll" style="width: 100%; overflow-x: scroll;">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">#</th>
+                        <th>Currency</th>
+                        <th>Price</th>
+                        <th style="text-align: center;">Change</th>
+                        <th style="text-align: center;">24h Volume</th>
+                    </tr>
+                </thead>
+                <tbody id="cryptoDiv">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./crypto.js"></script>
+</body>
+</html>
