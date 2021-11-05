@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magma cocteles tienda</title>
+    <!-----------Css boostrap--------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-----------Css owner----------------->
+    <link rel="stylesheet" href="./ecommerce.css">
+</head>
+<body>  
+    <!-------------------------------------------->
+    <!-------------------Header------------------->
+    <!-------------------------------------------->
+    <header>
+        <div class="logo_box">
+            <a href="#"><img class="logo" src="https://lerdafelipe.github.io/magmacocteles/imagenes/logo.png" alt="logo"></a>
+        </div>
+        <button onclick="openCart()" type="button" class="btn btn-default btn-ver-pv"><img src="https://lerdafelipe.github.io/magmacocteles/imagenes/bxs-cart-add.svg" alt=""></button>
+    </header>
+    <div class="respuestas"></div>
+    <!-------------------------------------------->
+    <!-------------------Header------------------->
+    <!-------------------------------------------->
+    <div class="div-link-magma"><a href="https://lerdafelipe.github.io/magmacocteles/index.html" class="link-magma">Ir al sitio de Magma</a></div>
+    <!-------------------------------------------->
+    <!----------------shop section---------------->
+    <!-------------------------------------------->
+    <section class="product-section">
+        <!----------title an subtitle------------>
+        <div class="titulos">
+            <!---------------Title--------------->
+            <div>
+                <h1 class="titulo">Magma cocteles tienda</h1>
+            </div>
+            <!--------------Title---------------->
+
+            <!---------------Subtitle------------>
+            <div>
+                <h5 class="subtitulo">Comprá nuestros cocteles desde la comodidad de tu casa</h5>
+            </div>
+            <!--------------Subtitle------------->
+        </div>
+        <!-----------title an subtitle----------->
+
+
+        <!-----------Cards de cocteles------------->
+        <div id="cocteles" class="cocteles">
+            
+        </div>
+        <!------------Coctails cards------------>
+    </section>
+    <!--------------------------------------------->
+    <!----------------shop setction---------------->
+    <!--------------------------------------------->
+
+    <!------------------Popup---------------------->
+
+    <div id="popup-container" class="popup-container">
+
+    </div>
+
+    <!--------------------------------------------->
+    <!------------------Preview cart--------------->
+    <!--------------------------------------------->
+    <div class="popup-container-pv" id="popup-container-pv">
+        <div class="container pv-cart-popup">
+            <h2>Carrito</h2>
+            <p>Productos añadidos:</p>            
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Productos</th>
+                    <th>Cant.</th>
+                    <th>Precio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="productos-pv-cart" class="productos-pv-cart">
+                
+            </tbody>
+            </table>
+            <div class="popup-btns">
+                <button onclick="closeCart()" type="button" class="btn btn-primary btn-cerrar-pv">Seguir compra</button>
+               <button onclick="endPurchase()" type="button" class="btn btn-success">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------->
+    <!------------------Preview cart--------------->
+    <!--------------------------------------------->
+
+
+    <!--Script owner-->
+    <script src="./ecommerce.js"></script>
+</body>
+</html>
