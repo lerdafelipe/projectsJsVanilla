@@ -41,9 +41,9 @@ const deploy = (location, current)=>{
     //Show icon
     icon.src = current.condition.icon;
     //Show date
-    day.innerHTML = `${fecha.getUTCDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}`;
+    day.innerHTML = `Date:${fecha.getUTCDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}`;
     //Show ubication
-    ubication.innerHTML = `Date:${location.name},${location.region}, ${location.country}`;
+    ubication.innerHTML = `${location.name},${location.region}, ${location.country}`;
     //Show condition
     condition.innerHTML = current.condition.text;
     //Show humidity
