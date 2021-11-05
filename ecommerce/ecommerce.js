@@ -123,7 +123,6 @@ const deleteProduct = (id)=>{
     ProductsCart = ProductsCart.filter(elem =>{elem.id !== id});
     localStorage.setItem('compraGuardada', JSON.stringify(ProductsCart));
     deployCart(ProductsCart);
-    deployProducts(Productos);
 }
 
 // Function to Initialize the app
@@ -133,6 +132,7 @@ const Initialize = async()=>{
         ProductsCart.push(e)
     } 
     deployCart(ProductsCart);
+    deployProducts(Productos);
 }
 
 // Function to end the purchase
