@@ -8,36 +8,39 @@
     <link rel="stylesheet" href="./quiz.css">
 </head>
 <body>
+    <div id="popup" class="popup open">
+        <h2 id="text-pop">¡Welcome to my Quiz App!</h2>
+        <button onclick="start()" id="btn-start" class="btn-start" type="button">Comenzar</button>
+    </div>
     <div class="main">
-
+        <!-----------App------------->
         <div class="app-container">
 
             <div class="question-container">
                 <div class="question-text-container">
-                    <h3 id="question-num" class="question-number">Question 1</h3>
-                    <p id="question" class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ut. Perferendis odit odio cupiditate dolorem quos, ea fugit beatae in obcaecati</p>
+                    <h3 id="question-num" class="question-number"></h3>
+                    <p id="question" class="question"></p>
                 </div>
             </div>
             <div class="rombo"></div>
             <div id="question-answer" class="answers-container">
-                <div class="answers-div-container">
-                    <button type="button" class="back">19 de enero de 1993</button>
-                </div>
-                <div class="answers-div-container">
-                    <button type="button" class="back">19 de enero de 1993</button>
-                </div>
-                <div class="answers-div-container">
-                    <button type="button" class="back">19 de enero de 1993</button>
-                </div>
-                <div class="answers-div-container">
-                    <button type="button" class="back">19 de enero de 1993</button>
-                </div>
+            
             </div>
 
             <div class="btn-container">
-                <button class="btn-next" type="button">Next Question</button>
+                <button onclick=nextQ() class="btn-next" type="button">Next Question</button>
             </div>
+            <div id="puntaje"></div>
+            <!------------Footer----------------->
+            <p class="footer" style="width: 100%; text-align: center; margin-top: 25px;">
+                made with 
+                <span style="color: rgb(255, 255, 255);"> ♥ </span>
+                by
+                <a style="color: rgb(255, 255, 255);" href="https://lerda-felipe.web.app/"> Felipe Lerda</a>
+            </p>
+            <!------------Footer----------------->
         </div>
+        <!-----------App------------->
 
     </div>
     
