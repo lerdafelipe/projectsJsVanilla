@@ -6,7 +6,7 @@ body {
   border: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #eff0f4;
+  background-color: #82879b;
 }
 h2 {
   text-align: center;
@@ -76,7 +76,7 @@ h2 {
 }
 .footer span,
 .footer a {
-  color: #1697d3;
+  color: #e2e2e2;
   font-size: 16px;
   font-weight: 500;
 }
