@@ -127,9 +127,11 @@ const deleteProduct = (id)=>{
 
 // Function to Initialize the app
 const Initialize = async()=>{
-    const CompraGuardada = JSON.parse(localStorage.getItem('compraGuardada'));
-    for await(let e  of CompraGuardada) {
-        ProductsCart.push(e)
+    const CompraGuardada = await JSON.parse(localStorage.getItem('compraGuardada'));
+    if(CompraGuardada !== null){
+        for (let e  of CompraGuardada) {
+            ProductsCart.push(e)
+        }
     } 
     deployCart(ProductsCart);
     deployProducts(Productos);
