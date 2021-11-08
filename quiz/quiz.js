@@ -7,18 +7,25 @@ const DATA = [
     {id: 1, question: "¿A quién vas a contratar?", answers:[{num:1, text: "La correcta es la 2"},{num:2, text:"Felipe Lerda"},{num:3, text:"Pon la 2"},{num:4, text:"2"}], correct: 2, userAnswer: null}
 ];
 
+//number of the question (ubication in the array)
 let num = 0;
+//Score of the user
 let puntaje = 0;
+//Elements of the HTML
 const question = document.getElementById('question');
 const questionNum = document.getElementById('question-num');
 const answers = document.getElementById('question-answer');
+//Elements of the HTML
 
+//Function to start the game or play again (I show the app and hide the presentation)
 const start = ()=>{
     num = 0;
     initizalize();
     document.getElementById('popup').classList.remove('open');
+    document.querySelectorAll('.btn-next')[0].innerHTML = "Next Question";
 }
 
+//Function to deploy the info in the HTML
 const initizalize = ()=>{
     question.innerHTML = DATA[num].question;
     questionNum.innerHTML = `Question ${num+1}`;
@@ -31,6 +38,7 @@ const initizalize = ()=>{
     answers.innerHTML = fragmentAnswer;
 }
 
+//Function to select an answer
 const select = (ans)=>{
     if((document.querySelectorAll('.select')).length > 0){
         document.querySelectorAll('.select')[0].classList.remove('select');
@@ -39,6 +47,7 @@ const select = (ans)=>{
     DATA[num].userAnswer = ans;
 }
 
+//Function to go to the next question
 const nextQ = ()=>{
     if((document.querySelectorAll('.select')).length > 0){
         if(num < DATA.length-1){
@@ -53,7 +62,7 @@ const nextQ = ()=>{
                 }  
             }
             document.getElementById('text-pop').innerHTML = `¡Felicidades! Tu puntaje es ${puntaje}`
-            document.getElementById('btn-start').innerHTML = `Comenzar de nuevo`
+            document.getElementById('btn-start').innerHTML = `Comenzar de nuevo`;
             document.getElementById('popup').classList.add('open');
         }
     }
@@ -62,4 +71,5 @@ const nextQ = ()=>{
     }
 }
 
+//Deploy the first question when the app renderize
 initizalize();
