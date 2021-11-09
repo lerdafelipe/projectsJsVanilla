@@ -120,7 +120,7 @@ const addCart = (id)=>{
 
 //Delete one product of the cart
 const deleteProduct = (id)=>{
-    ProductsCart = ProductsCart.filter(elem =>{elem.id !== id});
+    ProductsCart = ProductsCart.filter(elem =>elem.id !== id);
     localStorage.setItem('compraGuardada', JSON.stringify(ProductsCart));
     deployCart(ProductsCart);
 }
@@ -144,9 +144,9 @@ const endPurchase =()=>{
         return (item.cantidad * item.precio) + totalPrice
     }, 0);
     for (let e of ProductsCart) {
-        msg += `${e.nombre}%20x${e.cantidad}%20%20*=${e.cantidad * e.precio}*%0A`
+        msg += `${e.nombre}%20x${e.cantidad}%20%20*=$${e.cantidad * e.precio}*%0A`
     }
-    msg = msg += `*Total=%20${total}*`;
+    msg = msg += `*Total=%20$${total}*`;
     localStorage.removeItem('compraGuardada');
     location.href = `https://wa.me/+5493534279005?text=${msg}`;
 }
