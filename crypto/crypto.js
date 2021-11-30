@@ -55,7 +55,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
 const search = document.getElementById('search');
 
 search.addEventListener('input', (e)=>{
-    let newData = crypto.filter(element => {element.name.toLowerCase().includes(e.target.value.toLowerCase()) || element.symbol.toLowerCase().includes(e.target.value.toLowerCase())});
+    let newData = crypto.filter(el => el.name.toLowerCase().includes(e.target.value.toLowerCase()) || el.symbol.toLowerCase().includes(e.target.value.toLowerCase()));
     //If the input dont contains anything, deploy the initial data. Else, deploy the filter
     if(e.target.value == ''){
         deployCurrencys(crypto);
