@@ -1,7 +1,22 @@
 
 function writeTime(){
     const fecha = new Date();
-    const myBirt = moment(`${fecha.getFullYear()+1}-01-29`);
+    const Birt = (month, day)=>{
+        if(fecha.getMonth()+1 !== month){
+            if(fecha.getMonth()+1 > month){
+                return `${fecha.getFullYear()+1}-${month}-${day}`   
+            }else{
+                return `${fecha.getFullYear()}-${month}-${day}`
+            }
+        }else{
+            if(fecha.getDate() >= day){
+                return `${fecha.getFullYear()+1}-${month}-${day}`
+            }else{
+                return `${fecha.getFullYear()}-${month}-${day}`
+            }
+        }
+    }
+    const myBirt = moment(Birt(01, 29));
     const diff = myBirt.diff(fecha, 'Seconds');
 
     const days = Math.floor((diff/3600)/24);
@@ -16,7 +31,6 @@ function writeTime(){
     document.getElementById('seconds').innerHTML = seconds;
 }
 
-console.log(new Date())
 writeTime();
 
 setInterval(writeTime,1000);
