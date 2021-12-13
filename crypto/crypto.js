@@ -25,8 +25,8 @@ const deployCurrencys = async (data)=>{
                                 ${(element.symbol).toUpperCase()}
                             </span>
                         </td>
-                        <td>U$D ${(element.current_price).toFixed(2)}</td>
-                        <td class="text-center" style="color:${styleConditional(element)};font-weight:500;">${(element.price_change_percentage_24h).toFixed(2)}%</td>
+                        <td>U$D ${parseFloat(element.current_price).toFixed(2)}</td>
+                        <td class="text-center" style="color:${styleConditional(element)};font-weight:500;">${parseFloat(element.price_change_percentage_24h).toFixed(2)}%</td>
                         <td  class="text-center">${element.total_volume}</td>
                     </tr>`
         }
