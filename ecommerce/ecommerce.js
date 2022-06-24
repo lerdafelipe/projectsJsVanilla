@@ -1,5 +1,5 @@
 //Data ( Products.)
-let Productos = DATOSAPP = [
+let Productos =  [
     {"id": 1, "nombre": "Expresso Cream","precio": 267,"ingredientes": "Vodka, Licor de café cremoso, Café","imagen": "	https://lerdafelipe.github.io/magmacocteles/imagenes/Expresso_Cream.jpg"}, 
     {"id": 2,"nombre": "Golden Hanky Panky","precio": 290,"ingredientes": "Gin, Fernet, Vermouth rosso, Syrup de pomelo amarillo","imagen": "	https://lerdafelipe.github.io/magmacocteles/imagenes/Golden_Hanky_Panky.jpg"}, 
     {"id": 3,"nombre": "Hanky Panky","precio": 207,"ingredientes": "Gin, Fernet, Vermouth rosso","imagen": "	https://lerdafelipe.github.io/magmacocteles/imagenes/Hanky_Panky.jpg"}, 
@@ -153,3 +153,10 @@ const endPurchase =()=>{
 
 //Start The app
 Initialize();
+
+
+/***************
+ * *************
+ * *************
+ * *************
+ */
