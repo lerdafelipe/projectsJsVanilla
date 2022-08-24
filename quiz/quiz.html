@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <!-------Popup---------->
+    <div id="popup" class="popup open">
+        <h2 id="text-pop">¡Welcome to my Quiz App!</h2>
+        <p style="color: #359072; margin-top: 10px;">Recordá que cada respuesta correcta son 5 puntos</p>
+        <p style="color: rgb(184, 68, 68); margin-top: 10px;">La pregunta más importante es la última</p>
+        <button onclick="start()" id="btn-start" class="btn-start" type="button">Comenzar</button>
+    </div>
+    <!-------Popup---------->
+    <!-------Container of the info---------->
+    <div class="main">
+        <!-----------App------------->
+        <div class="app-container">
+            <!-------Question container----->
+            <div class="question-container">
+                <div class="question-text-container">
+                    <!-----Question number----->
+                    <h3 id="question-num" class="question-number"></h3>
+                    <!-----Question----->
+                    <p id="question" class="question"></p>
+                </div>
+            </div>
+            <!-------Question container----->
+            <!------Style div------>
+            <div class="rombo"></div>
+            <!------Container with the options------>
+            <div id="question-answer" class="answers-container">
+            
+            </div>
+            <!------Container of the options------>
+            <!------Button next container------>
+            <div class="btn-container">
+                <button onclick=nextQ() class="btn-next" type="button">Next Question</button>
+            </div>
+            <!------Button next container------>
+            <!------------Footer----------------->
+            <p class="footer" style="width: 100%; text-align: center; margin-top: 25px;">
+                made with 
+                <span style="color: rgb(255, 255, 255);"> ♥ </span>
+                by
+                <a style="color: rgb(255, 255, 255);" href="https://lerda-felipe.web.app/"> Felipe Lerda</a>
+            </p>
+            <!------------Footer----------------->
+        </div>
+        <!-----------App------------->
+    </div>
+    <!-------Container of the info---------->
+    
+
+
+    <script type="text/javascript" src="./quiz.js"></script>
+</body>
+</html>

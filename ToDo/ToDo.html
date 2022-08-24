@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="./ToDo.css">
+</head>
+<body>
+    <!--====Banner linear gradient====-->
+    <div class="banner"></div>
+    <!--===All the section  of tasks===-->
+    <div class="ToDo-section">
+        <!--====Title and subtitle=====-->
+        <div class="ToDo-header">
+            <h1>Tasks to do</h1>
+            <h3>Date: <span id="date"></span></h3>
+        </div>
+        <!--======Tasks=======-->
+        <div id="task-section">
+
+        </div>
+        <!--======Add Tasks=======-->
+        <button class="button-addTask" type="button" onclick="showForm()">
+            <span>+</span>
+            <p>Add new task . . .</p>
+        </button>
+    </div>
+    <!--===All the section  of tasks===-->
+    <!--============footer=============-->
+    <p class="footer">made with <span>♥</span> by <a href="lerda-felipe.web.app">Felipe Lerda</a></p>
+
+    <!--============================-->
+    <!--=========Form popup=========-->
+    <div class="popup" id="popup"> 
+        <button class="close-popup" type="button" onclick="hideForm()">X</button>
+        <div class="Form-section">
+            <div class="form-div">
+                <form>
+                    <label>Task to to:</label>
+                    <input type="text" placeholder="Task" id="newTask">
+                    <button type="button" onclick="AddTask()">Create task</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--=========Form popup=========-->
+    <!--============================-->
+    
+    <!--=======Scripts============-->
+    <script src="./ToDo.js"></script>
+</body>
+</html>

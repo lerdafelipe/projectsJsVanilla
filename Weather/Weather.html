@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./Weather.css">
+</head>
+<body>
+    <!--------All the display----------->
+    <div class="weather_app"> 
+        <!-----Weather app container----->
+        <div class="container">
+            <!----Location container---->
+            <div class="location_div">
+                <!----Location icon---->
+                <img class="location_icon" src="http://cdn.onlinewebfonts.com/svg/img_292414.png"/>
+                <!------Location------>
+                <h3 id="location"></h3>
+            </div>
+            <!----Location container---->
+            <!------Date------->
+            <h4 id="day"></h4>
+            <!------Date------->
+            <!--Temperature and icon container-->
+            <div class="temp_div">
+                <!----Temperature---->
+                <p id="temp"></p>
+                <span>°C</span>
+                <!------Icon of weather----->
+                <img src="" alt="condition" id="condition_icon">
+            </div>
+
+            <!-------Weather condition------>
+            <p id="condition"></p>
+
+            <!-----Table of additional content---->
+            <table>
+                <!----Humidity----->
+                <tr>
+                    <td>Humidity</td>
+                    <td id="humidity"></td>
+                </tr>
+                <!----Wind direction----->
+                <tr>
+                    <td>Wind Direction</td>
+                    <td id="wind_dir"></td>
+                </tr>
+                <!----Wind velocity----->
+                <tr>
+                    <td>Wind Velocity</td>
+                    <td id="wind_vel"></td>
+                </tr>
+                <!----Precipitations----->
+                <tr>
+                    <td>Precipitation</td>
+                    <td id="precipitation"></td>
+                </tr>
+                <!----Pressure----->
+                <tr>
+                    <td>Pressure</td>
+                    <td id="pressure"></td>
+                </tr>
+            </table>
+            <!-----Table of additional content---->
+            <!---------Footer-------->
+            <p class="footer">made with <span>♥</span> by <a href="https://lerda-felipe.web.app/">Felipe Lerda</a></p>
+        </div>
+        <!-----Weather app container----->
+    </div>
+
+
+    <!-----Own script of javascript------>
+    <script type="text/javascript" src="./Weather.js"></script>
+</body>
+</html>

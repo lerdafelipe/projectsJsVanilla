@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Lerda Felipe</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script type="text/javascript" src="./display.js"></script>
+    <script type="text/javascript" src="./operation.js"></script>
+    <script type="text/javascript" src="./calculator.js" defer></script>
+</head>
+<body>
+    <!--------------------------------------->
+    <!----------Section/background----------->
+    <div class="section-calculator">
+        <!---------------------------------------->
+        <!---------------Calculator--------------->
+        <div class="calculator">
+            <!------------------------------------>
+            <!--------display of calculator------->
+            <div class="calculator-display">
+                <!--------display Up------->
+                <div class="initial-value" id="initial-value"></div>
+                <!-------display Down------>
+                <div class="live-value" id="live-value"></div>
+            </div>
+            <!--------display of calculator------->
+            <!------------------------------------>
+            <!-------Keyboard of calculator------->
+            <div class="calculator-keys">
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button type="button" onclick="display.deleteAll()" class="AC">AC</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button type="button" onclick="display.remove()">←</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="operation" value="dividir">÷</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">7</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">8</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">9</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="operation" value="multiplicar">x</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">4</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">5</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">6</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="operation" value="restar">-</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">1</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">2</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">3</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="operation" value="sumar">+</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">0</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="number">.</button>
+                </div>
+                <!---------Key--------->
+                <div class="calculator-key">
+                    <button class="operation" value="igual">=</button>
+                </div>
+            </div>
+            <!-------Keyboard of calculator------->
+            <!------------------------------------>
+        </div>
+        <!---------------Calculator--------------->
+        <!---------------------------------------->
+    </div>
+    <!----------Section/background----------->
+    <!--------------------------------------->
+    <p class="footer">made with <span>♥</span> by <a href="lerda-felipe.web.app">Felipe Lerda</a></p>
+</body>
+</html>

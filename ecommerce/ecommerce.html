@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magma cocteles tienda</title>
+    <!-----------Css boostrap--------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-----------Css owner----------------->
+    <link rel="stylesheet" href="./ecommerce.css">
+</head>
+<body>  
+    <!-------------------------------------------->
+    <!-------------------Header------------------->
+    <!-------------------------------------------->
+    <header>
+        <div class="logo_box">
+            <a href="#"><img class="logo" src="https://lerdafelipe.github.io/magmacocteles/imagenes/logo.png" alt="logo"></a>
+        </div>
+        <button onclick="openCart()" type="button" class="btn btn-default btn-ver-pv"><img src="https://lerdafelipe.github.io/magmacocteles/imagenes/bxs-cart-add.svg" alt=""></button>
+    </header>
+    <div class="respuestas"></div>
+    <!-------------------------------------------->
+    <!-------------------Header------------------->
+    <!-------------------------------------------->
+    <div class="div-link-magma"><a href="https://lerdafelipe.github.io/magmacocteles/index.html" class="link-magma">Ir al sitio de Magma</a></div>
+    <!-------------------------------------------->
+    <!----------------shop section---------------->
+    <!-------------------------------------------->
+    <section class="product-section">
+        <!----------title an subtitle------------>
+        <div class="titulos">
+            <!---------------Title--------------->
+            <div>
+                <h1 class="titulo">Magma cocteles tienda</h1>
+            </div>
+            <!--------------Title---------------->
+
+            <!---------------Subtitle------------>
+            <div>
+                <h5 class="subtitulo">Comprá nuestros cocteles desde la comodidad de tu casa</h5>
+            </div>
+            <!--------------Subtitle------------->
+        </div>
+        <!-----------title an subtitle----------->
+
+
+        <!-----------Cards de cocteles------------->
+        <div id="cocteles" class="cocteles">
+            
+        </div>
+        <!------------Coctails cards------------>
+    </section>
+    <!--------------------------------------------->
+    <!----------------shop setction---------------->
+    <!--------------------------------------------->
+
+    <!------------------Popup---------------------->
+
+    <div id="popup-container" class="popup-container">
+
+    </div>
+
+    <!--------------------------------------------->
+    <!------------------Preview cart--------------->
+    <!--------------------------------------------->
+    <div class="popup-container-pv" id="popup-container-pv">
+        <div class="container pv-cart-popup">
+            <h2>Carrito</h2>
+            <p>Productos añadidos:</p>            
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Productos</th>
+                    <th>Cant.</th>
+                    <th>Precio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="productos-pv-cart" class="productos-pv-cart">
+                
+            </tbody>
+            </table>
+            <div class="popup-btns">
+                <button onclick="closeCart()" type="button" class="btn btn-primary btn-cerrar-pv">Seguir compra</button>
+               <button onclick="endPurchase()" type="button" class="btn btn-success">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------->
+    <!------------------Preview cart--------------->
+    <!--------------------------------------------->
+
+
+
+
+    <div class='hide' id='css-whatsapp'>
+        <div class='adb-header green'>
+            <div class='adb-home-chat'>
+                <div class='my-info-chat-2'>
+                    <div class='box-6'>
+                        <svg class='WhatsApp' height='20px' style='enable-background:new 0 0 64 64;' version='1.1' viewBox='0 0 64 64' width='20px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                            <g id='WA'><g><path class='st6' d='M5,59l12-3.3c4.3,2.7,9.5,4.3,15,4.3c15.5,0,28-12.5,28-28S47.5,4,32,4S4,16.5,4,32c0,5.5,1.6,10.7,4.3,15    L5,59z'/><path class='st2' d='M45.9,39.6c-1.9,4-5.4,4.5-5.4,4.5c-3,0.6-6.8-0.7-9.8-2.1c-4.3-2-8-5.2-10.5-9.3c-1.1-1.9-2.1-4.1-2.2-6.2    c0,0-0.4-3.5,3-6.3c0.3-0.2,0.6-0.3,1-0.3l1.5,0c0.6,0,1.2,0.4,1.4,1l2.3,5.6c0.2,0.6,0.1,1.2-0.3,1.7l-1.5,1.6    c-0.5,0.5-0.5,1.2-0.2,1.8c0.1,0.2,0.3,0.5,0.6,0.8c1.8,2.4,4.2,4.2,6.9,5.4c0.4,0.2,0.7,0.3,1,0.4c0.7,0.2,1.3-0.1,1.7-0.6    l1.2-1.8c0.3-0.5,0.9-0.8,1.5-0.7l6,0.9c0.6,0.1,1.1,0.6,1.3,1.2l0.4,1.5C46,38.9,46,39.3,45.9,39.6z'/></g></g></svg>
+                    </div>
+                    <div class='box-7'>
+                        <h3>Genial</h3>
+                        <span class='adb-base-b-2'>&#161;Estamos aquí para ayudarte! No dudes en preguntar. Haga clic a continuación para iniciar el chat.</span>
+                    </div>
+                </div>
+            </div>
+            <div class='get-new hide'>
+                <div class='adb-avatar'>
+                    <img src='https://lerda-felipe.web.app/img/profile-pic.png'/>
+                </div>
+                <div id='box-w-r'></div>
+                <div id='box-label-w'></div>
+            </div>
+        </div>
+    <div class='box-chat'>
+        <a class='adb-dual' href='javascript:void' title='Chat Whatsapp'>
+            <div class='my-info-chat'>
+                <div class='adb-avatar'>
+                    <img src='https://lerda-felipe.web.app/img/profile-pic.png'/>
+                </div>
+                <span class='adb-base-b'>Felipe Lerda</span>
+                <span class='adb-base'>Seré tu asistente en lo que necesites</span>
+            </div>
+            <span class='number-whatsapp'>+543534279005</span>
+        </a>
+    </div>
+    <div class='caja-chat hide'>
+        <div class='trix-one'>
+            <span>
+                <div class='fr-user'>Felipe Lerda</div>
+                    Hola 👋
+                <br/>
+                    Cómo puedo ayudarte?
+                <br/>
+            </span>
+        </div>
+        <div class='mensaje-whatsapp'>
+            <textarea id='chat-input' maxlength='400' placeholder='Escriba su mensaje' row='1'></textarea>
+            <a href='javascript:void;' id='send-to-whatsapp'>Enviar</a>
+        </div>
+    </div>
+    <div id='go-number'>
+        <a class='close-chat' href='javascript:void'>
+            &#215;
+        </a>
+    </div>
+    </div>
+    <a class='adb-whatsapp' href='javascript:void' title='Chat Whastapp'>
+        <i class='fa fa-whatsapp'></i>
+    </a>
+
+
+
+
+
+
+
+    <!------------Footer----------------->
+    <p class="footer text-center">
+        made with 
+        <span style="color: aqua;"> ♥ </span>
+        by
+        <a style="color: aqua;" href="https://lerda-felipe.web.app/"> Felipe Lerda</a>
+    </p>
+    <!------------Footer----------------->
+
+
+    <!--Script owner-->
+    <script src="./ecommerce.js"></script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet'/>  
+    
+    <script>        
+        $(document).on("click", "#send-to-whatsapp" ,function(){
+            var a = document.getElementById("chat-input");
+            if( a.value !== "" ){
+                var b = $("#go-number").text(),
+                c = document.getElementById("chat-input").value,
+                d = "https://web.whatsapp.com/send" , 
+                e = b, 
+                f = "&text=" + c;
+                /*if(Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Minii.test(navigator.userAgent)){}*/
+                var d= "whatsapp://send";
+                var g= d+"?phone=" + e + f;
+                window.open(g, '_blank')
+            }
+        }),
+        $(document).on("click",".adb-dual",function(){
+            document.getElementById("go-number").innerHTML = $(this).children(".number-whatsapp").text(),
+            $(".caja-chat,.get-new").addClass("show").removeClass("hide"),
+            $(".box-chat,.adb-home-chat").addClass("hide").removeClass("show"),document.getElementById("box-w-r").innerHTML = $(this).children(".my-info-chat").children(".adb-base-b").text(),
+            document.getElementById("box-label-w").innerHTML = $(this).children(".my-info-chat").children(".adb-base").text()
+        }),
+        $(document).on("click",".close-chat", function(){
+            $("#css-whatsapp").addClass("hide").removeClass("show")
+        }),
+        $(document).on("click",".adb-whatsapp",function(){
+            if(document.getElementById('css-whatsapp').classList.contains('show')){
+                $("#css-whatsapp").addClass("hide").removeClass("show");
+            }else{
+                $(".caja-chat,.get-new").addClass("hide").removeClass("show");
+                $(".box-chat,.adb-home-chat").addClass("show").removeClass("hide");
+                $("#css-whatsapp").addClass("show").removeClass("hide");
+
+            }          
+        });
+    </script> 
+</body>
+</html>

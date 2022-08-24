@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Currency Prices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./crypto.css">
+</head>
+<body>
+    <!--------------------------------------->
+    <!------------Main container------------->
+    <!--------------------------------------->
+    <div class="container">
+        <!------------Title------------->
+        <h2 class="text-center">Crypto Currency Prices</h2>
+        <!--------Title for search--------->
+        <h5 style="color: #d3c2c2;">Find your favorite Crypto</h5>
+        <!------------Search-------------->
+        <input id="search" type="text" placeholder="Search a Coin">
+        <!------------Search-------------->
+        <!-------Div of the table--------->
+        <div class="scroll">
+            <!-------Table------->
+            <table>
+                <!-------Fields of the table------>
+                <thead>
+                    <tr>
+                        <th class="text-center">#</th>
+                        <th>Currency</th>
+                        <th>Price</th>
+                        <th class="text-center">Change</th>
+                        <th class="text-center">24h Volume</th>
+                    </tr>
+                </thead>
+                <!-------Fields of the table------>
+                <tbody id="cryptoDiv">
+
+                </tbody>
+            </table>
+            <!-------Table------->
+        </div>
+        <!-------Div of the table--------->
+    </div>
+    <!--------------------------------------->
+    <!------------Main container------------->
+    <!--------------------------------------->
+
+    <!------------Footer----------------->
+    <p class="footer text-center">
+        made with 
+        <span style="color: aqua;"> ♥ </span>
+        by
+        <a style="color: aqua;" href="https://lerda-felipe.web.app/"> Felipe Lerda</a>
+    </p>
+    <!------------Footer----------------->
+
+    <script type="text/javascript" src="./crypto.js"></script>
+</body>
+</html>
